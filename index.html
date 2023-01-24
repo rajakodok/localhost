@@ -12,35 +12,6 @@
   <!-- custom css  -->
   <link rel="stylesheet" href="https://pkvmurahqq.com/assets/css/style.css">
   <title>pkvmurahqq.com - Top & The Best seo service in 2022</title>
-  <script>
-addEventListener('fetch', function(event) {
-    const { request } = event
-    const response = handleRequest(request).catch(handleError)
-    event.respondWith(response)
-    })
-
-// handleRequest function 
-async function handleRequest(request) {
-    const { method, url } = request
-    const { host, pathname } = new URL(url)
-    
-    if ((host == "www.abccompany.com" || host == "abccompany.com") && pathname == "/")){
-        const country = request.cf.country
-        if (country != null && country in countryMap) {
-            const countryUrl = countryMap[country]
-            return Response.redirect(countryUrl)
-        }
-    }
-    return fetch(request)
-}
-
-// Country Dictionary Map
-const countryMap = {
-    US: "https://us.abccompany.com/",
-    CA: "https://www.abccompany.ca/",
-    ID: "https://www.abccompany.com/en-gb/",
-    }    
-</script>
 </head>
 
 <body>
